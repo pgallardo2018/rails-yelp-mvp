@@ -19,4 +19,6 @@
   </div>
   <%= link_to 'Back to List', restaurants_path %>
   <%= link_to "Edit this restaurant", edit_restaurant_path(@restaurant) %>
+  <%= link_to "Add Review", new_restaurant_review_path(@restaurant)  %>
+  <%= button_to "Delete this restaurant", @restaurant, method: :delete, class: 'btn btn-danger' %>
 </div>
